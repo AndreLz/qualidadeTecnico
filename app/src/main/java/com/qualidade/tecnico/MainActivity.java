@@ -10,6 +10,7 @@ package com.qualidade.tecnico;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Build;
@@ -126,6 +127,13 @@ public class MainActivity extends AppCompatActivity
 
         if (glView != null) { glView.onPause(); }
         super.onPause();
+        finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(this,FirstActivity.class);
+        startActivity(i);
         finish();
     }
 

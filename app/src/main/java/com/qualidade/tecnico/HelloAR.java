@@ -40,7 +40,6 @@ public class HelloAR
     private CameraFrameStreamer streamer;
     private ArrayList<ImageTracker> trackers;
     private Renderer videobg_renderer;
-    private BoxRenderer box_renderer;
     private boolean viewport_changed = false;
     private Vec2I view_size = new Vec2I(0, 0);
     private int rotation = 0;
@@ -130,7 +129,6 @@ public class HelloAR
             tracker.dispose();
         }
         trackers.clear();
-        box_renderer = null;
         if (videobg_renderer != null) {
             videobg_renderer.dispose();
             videobg_renderer = null;
@@ -174,8 +172,6 @@ public class HelloAR
             videobg_renderer.dispose();
         }
         videobg_renderer = new Renderer();
-        box_renderer = new BoxRenderer();
-        box_renderer.init();
     }
 
     public void resizeGL(int width, int height)
@@ -236,7 +232,7 @@ public class HelloAR
                 int status = targetInstance.status();
                 if (status == TargetStatus.Tracked) {
 
-                    Log.v("HelloAR","peguei alguma coisa");
+                    Log.v("HelloAR","peguei alguma coisa: "+targetInstance.target().name());
                     Intent launchersActivity = new Intent( getApplicationContext(), ChooseActivity.class);
                     context.startActivity(launchersActivity);
 
@@ -244,9 +240,6 @@ public class HelloAR
                     ImageTarget imagetarget = target instanceof ImageTarget ? (ImageTarget) (target) : null;
                     if (imagetarget == null) {
                         continue;
-                    }
-                    if (box_renderer != null) {
-                        box_renderer.render(camera.projectionGL(0.2f, 500.f), targetInstance.poseGL(), imagetarget.size());
                     }
                 }
             }
