@@ -10,15 +10,15 @@ Se der erro copiar copiar a pasta bower presente em "C:\xampp\htdocs\QSmartCost\
 
 Adicionar o seguinte código em "C:\xampp\htdocs\smartTecnico\frontend\views\layouts\left.php"
 
-C----------------------------------Código-----------------------------------------------------------------
+-----------------------------------Código-----------------------------------------------------------------
 
 ['label' => 'Field Installation', 'icon' => 'fa fa-check-square-o', 'url' => ['/appinstalacao/index']],
 
-C---------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 criar a seguinte tabela na database "yii2advanced":
 
-C---------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 CREATE TABLE IF NOT EXISTS appinstalacao (
     id INT AUTO_INCREMENT,
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS appinstalacao (
     PRIMARY KEY (id)
 )
 
-C-----------------------------------------
+----------------------------------------------------------------------------------------------------------
 
 Clicar em executar(canto inferir direito)
 
@@ -51,11 +51,11 @@ Adicionar o seguinte código na linha seguinte a "namespace app\controllers;" em
 
 "C:\xampp\htdocs\QSmartCost/frontend/controllers/AppinstalacaoController.php"
 
-C----------------------------------
+------------------------------------------------------------------------------------------------------------
 
 namespace frontend\controllers;
 
-C----------------------------------
+------------------------------------------------------------------------------------------------------------
 
 
 ****************************************************************************************************************************************
