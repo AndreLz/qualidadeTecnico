@@ -47,9 +47,7 @@ View Path = @app/views/appinstalacao
 
 clicar em preview e em seguida em generate
 
-Adicionar o seguinte código na linha seguinte a "namespace app\controllers;" em 
-
-"C:\xampp\htdocs\QSmartCost/frontend/controllers/AppinstalacaoController.php"
+Adicionar o seguinte código na linha seguinte a "namespace app\controllers;" em "C:\xampp\htdocs\QSmartCost/frontend/controllers/AppinstalacaoController.php"
 
 ------------------------------------------------------------------------------------------------------------
 
