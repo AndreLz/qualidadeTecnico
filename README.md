@@ -10,7 +10,7 @@ Se der erro copiar copiar a pasta bower presente em "C:\xampp\htdocs\QSmartCost\
 
 Adicionar o seguinte código em "C:\xampp\htdocs\smartTecnico\frontend\views\layouts\left.php"
 
------------------------------------Código-----------------------------------------------------------------
+------------------------------------------------Código-----------------------------------------------------------------
 
 ['label' => 'Field Installation', 'icon' => 'fa fa-check-square-o', 'url' => ['/appinstalacao/index']],
 
@@ -49,7 +49,7 @@ clicar em preview e em seguida em generate
 
 Adicionar o seguinte código na linha seguinte a "namespace app\controllers;" em "C:\xampp\htdocs\QSmartCost/frontend/controllers/AppinstalacaoController.php"
 
-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------Código---------------------------------------------------------------
 
 namespace frontend\controllers;
 
